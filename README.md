@@ -1,2 +1,2 @@
 # Taverna-Geek
-Projeto de uma empresa geek :D :O :c
+Projeto de uma empresa geek :D
