@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Bakbak One";
+    src: url(../fonte/BakbakOne-Regular.ttf);
+}
+:root{
+    --cor1: #45214A;
+    --cor2: #323050;
+    --cor3: #21445B;
+    --cor4: #1A6566;
+    --cor5: #5D8A66;
+
+    --texto: #A2C2EB;
+}

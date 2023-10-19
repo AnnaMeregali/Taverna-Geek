@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Bakbak One";
+    src: url(../fonte/BakbakOne-Regular.ttf);
+}
+:root{
+    --cor1: #45214A;
+    --cor2: #323050;
+    --cor3: #21445B;
+    --cor4: #1A6566;
+    --cor5: #5D8A66;
+
+    --texto: #A2C2EB;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: "Bakbak One";
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor1);
+    position: relative;
+    box-sizing: border-box;
+}
+section#login{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+    background-color: var(--cor3);
+    border-radius: 15px;
+    color: var(--texto);
+}
+div#imagem{
+    background: url(../../imagens/dado20.jpg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px ;
+}
+section#descricao{
+    display: none;
+}
+div#form{
+    position: absolute;
+
+    top: 69%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+}
+form > div{
+    margin-top: 0.5em;
+}
+form > div > input{
+    border-radius: 15px;
+    border: none;
+    box-shadow: -4px 5px 1px var(--cor2);
+}
+form > div > label{
+    margin-left: 5px;
+}
+form > legend{
+    text-align: center;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+div#botao{
+    margin-top: 18px;
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: #7aa5dcc3;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1023px) {
+    img#peq{
+        display: none;
+    }
+    img#gra{
+        display: block;
+    }
+    div#imagem{
+        height: 170px;
+        width: 30vw;
+    }
+    section#login{
+        height: 400px;
+        width: 30vw;
+    }
+    form > div > input{
+        width: 25vw;
+        padding: 5px 5px 5px 10px;
+        font-size: 17px;
+    }
+    form > div#botao > input{
+        width: 18.5vw;
+        height: 35px;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1022px) {
+    img#peq{
+        display: none;
+    }
+    img#gra{
+        display: block;
+    }
+    div#imagem{
+        height: 170px;
+        width: 35vw;
+    }
+    section#login{
+        height: 400px;
+        width: 35vw;
+    }
+    form > div > input{
+        width: 28vw;
+        padding: 5px 5px 5px 10px;
+        font-size: 17px;
+    }
+    form > div#botao > input{
+        width: 18.5vw;
+        height: 35px;
+    }
+}
+@media screen and (max-width: 749px){
+    img#peq{
+        display: block;
+    }
+    img#gra{
+        display: none;
+    }
+    div#imagem{
+        height: 170px;
+        width: 55vw;
+    }
+    section#login{
+        height: 400px;
+        width: 55vw;
+    }
+    form > div > input{
+        width: 45vw;
+        padding: 5px 5px 5px 10px;
+        font-size: 17px;
+    }
+    form > div#botao > input{
+        width: 29vw;
+        height: 35px;
+    }
+}

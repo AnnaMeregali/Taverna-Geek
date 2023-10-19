@@ -1,0 +1,44 @@
+
+@charset "UTF-8";
+
+:root{
+    --cor1: #45214A;
+    --cor2: #323050;
+    --cor3: #21445B;
+    --cor4: #1A6566; 
+    --cor5: #5d8a66; 
+
+    --letra: #a2c2eb;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: var(--cor3);
+    position: relative;
+}
+header > form > div > input{
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    width: 50vw;
+    height: 7.5vh;
+    border-radius: 23px;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid black;
+    transform: translate(-50%,-50%);
+}
+img#compra{
+    position: absolute;
+
+    left: 92%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+img#logo{
+    margin-left: 10%;
+}

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/*inutil por enquanto */
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: purple;
+    position: relative;
+}
+header > form > div > input{
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    width: 50vw;
+} /* por algum motivo se juntar com o de baixo da erro */
+header input{
+    height: 50px;
+    border-radius: 22px;
+    padding: 14px;
+    font-size: 17px;
+    border: 1px solid black;
+}
+img#compra{
+    position: absolute;
+
+    left: 92%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+img#logo{
+    margin-left: 11%;
+}
+img#menu_desktop{
+    position: absolute;
+
+    left: 5%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+img#menu{
+    display: none;
+}
+body{
+    background-color: #a8a8a8;
+}
+body > div{
+    width: 90vw;
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    margin: auto;
+    margin-top: 20px;
+}
+footer{
+    background-color: purple;
+
+}

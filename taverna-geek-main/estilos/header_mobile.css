@@ -1,0 +1,48 @@
+
+@charset "UTF-8";
+
+:root{
+    --cor1: #45214A;
+    --cor2: #323050;
+    --cor3: #21445B;
+    --cor4: #1A6566; 
+    --cor5: #5d8a66; 
+
+    --letra: #a2c2eb;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color:  var(--cor3);
+    position: relative;
+}
+header > form > div > input{
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    width: 50vw;
+    height: 45px;
+    border-radius: 22px;
+    padding: 14px;
+    font-size: 18px;
+    border: 2px solid black;
+}
+
+header img#logo{
+    width: 100px;
+    margin-left: 3%;
+}
+header img#compra{
+    position: absolute;
+    width: 40px;
+    top: 50%;
+    left: 93%;
+    transform: translate(-50%,-50%);
+}
+input:focus{
+    width: 74vw;
+    left:60vw;
+}

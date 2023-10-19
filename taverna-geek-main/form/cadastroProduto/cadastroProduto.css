@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Bakbak One";
+    src: url(../fonte/BakbakOne-Regular.ttf);
+}
+:root{
+    --cor1: #45214A;
+    --cor2: #323050;
+    --cor3: #21445B;
+    --cor4: #1A6566;
+    --cor5: #5D8A66;
+
+    --texto: #A2C2EB;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor1);
+    font-family: "Bakbak One";
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+    background-color: var(--cor3);
+    height: 550px;
+    width: 30vw;
+    border-radius: 15px;
+    box-shadow: 5px 5px 6px #301734;
+}
+main > form{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+    color: var(--texto);
+}
+legend{
+    text-align: center;
+    text-transform: uppercase;
+}
+label{
+    display: block;
+}
+input, textarea{
+    margin: auto;
+    padding: 7px 9px;
+    border-radius: 14px;
+    border-style: none;
+    width: 25vw;
+    margin-bottom: 0.5em;
+    box-shadow: -4px 5px 1px var(--cor2);
+    font-size: 17px;
+}
+textarea{
+    max-height: 70px;
+    max-width: 25vw;
+}
+label[for="iimage"]{
+    padding: 5px 7px;
+    color: black;
+    width: 200px;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: -4px 5px 1px var(--cor2);
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+input[type="file"]{
+    display: none;
+}
+div#botao{
+    text-align: center;
+}
+input[type="submit"]{
+    margin-top: .8em;
+    background-color: #7aa5dcc3;
+    width: 70%;
+    padding: 10px 0px;
+    cursor: pointer;
+}

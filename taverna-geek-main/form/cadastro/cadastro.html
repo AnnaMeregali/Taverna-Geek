@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="cadastro.css" media="screen and (min-width:700px)">
+    <link rel="stylesheet" href="casdastro_mobile.css" media="screen and (max-width:700px)">
+</head>
+<body>
+    <header>
+        <img src="../../imagens/logo2.png" alt="logo">
+        <h1>Taverna Geek</h1>
+    </header>
+    <main>
+        <section id="descricao">
+            <img src="../../imagens/logoG.png" alt=""><h1>Taverna Geek</h1>
+            <p>Nossa empresa consiste em uma loja cujo a qual atua no ramo Geek, tendo como objetivo conquistar um público cada vez maior, sem limitações de faixa etária. Focamos na venda de jogos de tabuleiro, acessórios, decorações, mangás e livros.</p>
+        </section>
+        <section id="form">
+            <form action="post">
+                <legend>Cadastro</legend>
+                <div class="inputBox">
+                    <label for="iname">Nome de usuário</label >
+                    <input type="text" name="nome" id="inome" required>
+                </div>
+                <div class="inputBox">
+                    <label for="iemail">E-mail</label >
+                    <input type="text" name="email" id="iemail" required>
+                </div>
+                <div class="inputBox">
+                    <label for="itelefone">Telefone</label >
+                    <input type="tel" name="telefone" id="itelefone">
+                </div>
+                <div id="cidade-estado">
+                    <label for="iestado" class="label_cidade_estado">Estado</label ><label for="icidade" class="label_cidade_estado">Cidade</label><br>
+                    <input type="text" name="estado" id="iestado" maxlength="2"><input type="text" name="cidade" id="icidade">
+                </div>
+                <div>
+                    <label for="ibairro">Bairro</label >
+                    <input type="text" name="bairro" id="ibairro">
+                </div>
+                <div>
+                    <label for="irua">Rua</label >
+                    <input type="text" name="rua" id="irua">
+                </div>
+                <div>
+                    <label for="inumero">N°</label >
+                    <input type="text" name="numero" id="inumero" maxlength="5">
+                </div>
+                <div>
+                    <label for="icomplemento">Complemento</label >
+                    <input type="text" name="complemento" id="icomplemento">
+                </div>
+                <div class="inputBox">
+                    <label for="isenha">Senha</label >
+                    <input type="password" name="senha" id="isenha" requerid>
+                </div>
+                <div id="botao">
+                    <input type="submit"  value="Cadastrar" id="cadastrar" class="cadastrar">
+                </div>
+                <a id="link" href="../login/login.html">Faça Login</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

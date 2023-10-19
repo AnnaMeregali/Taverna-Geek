@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/header_desktop.css" media="screen and (min-width: 700px)">
+    <link rel="stylesheet" href="../estilos/menu_desktop.css" media="screen and (min-width: 700px)">
+    <link rel="stylesheet" href="../estilos/header_mobile.css" media="screen and (max-width: 700px)">
+    <link rel="stylesheet" href="../estilos/menu_mobile.css" media="screen and (max-width: 700px)">
+    <link rel="stylesheet" href="../estilos/paginas.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="../imagens/logo_new.png" alt="Logo da empresa" width="160px">
+        <img id="compra" src="../imagens/carrinho1.png" alt="Carrinho">
+        <nav>
+            <a class="menu_lateral" href="/" id="inutil"></a>
+                <div class="menu" onclick="menuClicado()">
+                    <div class="line1"></div>
+                    <div class="line1"></div>
+                    <div class="line1"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../form/cadastro/cadastro.html">Meu Perfil</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="Bonecos.html">Bonecos</a></li>
+                    <li><a href="Rpgs.html" class="selecionado">Jogos</a></li>
+                    <li><a href="Mangas.html">Mangás/HQs</a></li>
+                    <li><a href="Acessorios.html">Acessórios</a></li>
+                </ul>
+        </nav>
+        <form action="pesquisa.php" method="get">
+            <div>
+                <input type="search" name="pesquisa" id="ipesquisa" placeholder="&#x1F50D; Buscar Produtos...">
+            </div>
+        </form>
+        <script src="../javascript/menu_desktop.js"></script>
+    </header>
+    <main>
+        <ul class="nav-list2">
+            <li><a href="../form/cadastro/cadastro.html">Meu Perfil</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Bonecos.html">Bonecos</a></li>
+            <li><a href="Rpgs.html" class="selecionado">RPGs</a></li>
+            <li><a href="Mangas.html">Mangás/HQs</a></li>
+            <li><a href="Acessorios.html">Acessórios</a></li>
+        </ul>
+        <div> 
+        </div>
+    </main>
+    <section class="produtos">
+        <ul class="lista_produtos">
+            <div id="titulo">
+                <p>Jogos de Tabuleiro --></p>
+            </div>
+            <li><img src="../imagens/jogos.png" alt="" height="200px" width="170px"><p class="produto">Jogo de tabulerio e estrategia War</p><p class="valor">R$30,00</p><a class="comprar" href="#">Comprar</a></li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@charset "UTF-8";
+:root{
+    --cor1: #45214A;
+    --cor2: #323050;
+    --cor3: #21445B;
+    --cor4: #1A6566; 
+    --cor5: #5d8a66; 
+
+    --letra: #a2c2eb;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 21vh;
+}
+
+a {
+    color: var(--letra);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+.menu_lateral {
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif; /*mudar fonte */
+}
+.nav-list2{
+    display: none;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 25px;
+    position: absolute;
+    top: 21vh;
+    left: 0;
+    width: 15vw;
+    height: 99vh;
+    background: #162d3c;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+}
+.nav-list li {
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 7vh;
+}
+.nav-list a{
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 20px;
+    display: block;
+    width: 13vw;
+    box-shadow: 3px 3px 4px #0d1b23;
+}
+.selecionado{
+    background-color: var(--cor2);
+    cursor:default;
+    text-decoration: underline;
+}
+.selecionado:hover{
+    opacity: 1.0;
+}
+.menu {
+    cursor: pointer;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu div{
+    width: 38px;
+    height: 4px;
+    background: black;
+    margin: 8px;
+    transition: 0.3s;
+}
+body {
+    overflow-x: hidden;
+}
+.nav-list li {
+    margin-right: 0;
+    opacity: 0;
+}
+.menu {
+    display: block;
+}
+.nav-list.active {
+    transform: translateX(0);
+}
+img#logo{
+    margin-left: 11%;
+    height: 100%;
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media screen and (min-width:700px) and (max-width: 900px) {
+    .nav-list{
+        width: 19vw;
+    }
+    .nav-list a{
+        width: 15.3vw;
+    }
+}

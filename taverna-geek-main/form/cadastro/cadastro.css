@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&family=Young+Serif&display=swap');
+
+@font-face {
+    font-family: "Bakbak One";
+    src: url(../fonte/BakbakOne-Regular.ttf);
+}
+
+:root{
+    --cor1: #45214A;
+    --cor2: #323050;
+    --cor3: #21445B;
+    --cor4: #1A6566; 
+    --cor5: #5d8a66; 
+
+    --letra: #a2c2eb;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--cor1);
+}
+header{
+    display: none;
+}
+label{
+    display: block;
+}
+section#descricao{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 43%;
+    transform: translate(0,-50%);
+    display: inline-block;
+    margin-left: 5.7vw;
+    width: 42vw;
+    background-color: rgba(245, 245, 245, 0);
+    text-align: center;
+}
+#descricao > h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+    font-variant: small-caps;
+    color:white;
+}
+#descricao > p{
+    text-align: justify;
+    color: white ;
+    font-family: 'Young Serif', serif;
+}  
+section#form{
+    font-family: "Bakbak One";
+    position: absolute;
+    top: 7%;
+    left: 75%;
+    transform: translate(-50%,0);
+    background-color: var(--cor3);
+    padding: 13px;
+    border-radius: 10px;
+    color: #a2c2eb;
+
+    box-shadow: 5px 5px 6px #301734;
+}
+legend{
+    font-size: 1.2em;
+    text-align: center;
+}
+input{
+    margin: auto;
+    padding: 7px 0px;
+    border-radius: 14px;
+    border-style: none;
+    width: 30vw;
+
+    box-shadow: -4px 5px 1px var(--cor2);
+}
+div{
+    padding-top: 0.4em;
+}
+#cidade-estado > input{
+    display: inline;
+}
+#iestado{
+    width: 7vw;
+    margin-right: 1vw;
+}
+#icidade{
+    width: 22vw;
+}
+.label_cidade_estado{
+    display: inline;
+}
+label[for="icidade"]{
+    position: absolute;
+    left:29%;
+}
+#cadastrar{
+    margin-top: 0.6em;
+    padding: 13px;
+    cursor: pointer;
+}
+#botao{
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: #7aa5dcc3;
+    width: 70%;
+}
+a#link{
+    display: block;
+}
+#link{
+    text-decoration: none;
+}

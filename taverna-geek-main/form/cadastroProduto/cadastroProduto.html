@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Produto</title>
+    <link rel="stylesheet" href="cadastroProduto.css">
+</head>
+<body>
+    <main>
+        <form action="" method="post">
+            <legend>Cadastro de Produtos</legend>
+            <div id="imagem">
+                <label for="iimage">Anexar Imagem</label>
+                <input type="file" name="image" id="iimage">
+            </div>
+            <div class="campos">
+                <label for="inome">Nome do Produto</label>
+                <input type="text" name="Nome" id="inome">
+            </div>
+            <div class="campos">
+                <label for="imarca">Marca</label>
+                <input type="text" name="marca" id="imarca">
+            </div>
+            <div class="campos">
+                <label for="idescricao">Descrição</label>
+                <textarea name="descricao" id="idescricao" cols="40" rows="3"></textarea>
+            </div>
+            <div class="campos">
+                <label for="iprecoCusto">Preço de Custo</label>
+                <input type="number" name="precoCusto" id="iprecoCusto">
+            </div>
+            <div class="campos">
+                <label for="iprecoVenda">Preço de Venda</label>
+                <input type="number" name="precoVenda" id="iprecoVenda">
+            </div>
+            <div id="botao">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
